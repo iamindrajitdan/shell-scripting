@@ -40,9 +40,13 @@ perm_serv
 if ! deploy; then
         #sudo systemctl stop nginx && sudo fuser -k 80/tcp 8000/tcp && docker compose up -d
         echo "####################################################################"
-	echo "DEPLOYMENT STARTED"
+	echo "DEPLOYMENT FAILED"
 	echo "####################################################################"
 	exit 1
 fi
 
-                                      
+echo "####################################################################"
+echo "DEPLOYMENT DONE"
+echo "####################################################################"                               
+
+
