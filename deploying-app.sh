@@ -13,7 +13,6 @@ install_requirements(){
 
 perm_serv(){
         sudo chown "$USER"  /var/run/docker.sock
-	sudo chown "$USER" /home/ubuntu/shell-scripting/django-notes-app/data/mysql/db/#ib_16384_0.dblwr
         #sudo systemctl enable docker
         #sudo systemctl enable nginx
 }
